@@ -5,9 +5,9 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { label: "ABOUT", href: "#about" },
   { label: "SKILLS", href: "#skills" },
-  { label: "QUESTS", href: "#education" },
+  { label: "EDUCATION", href: "#education" },
   { label: "PROJECTS", href: "#projects" },
-  { label: "ACHIEVEMENTS", href: "#certificates" },
+  { label: "CERTIFICATES", href: "#certificates" },
 ];
 
 const Navbar = () => {
@@ -32,8 +32,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container flex items-center justify-between h-16">
-        <a href="#" className="font-display text-sm font-bold tracking-widest text-primary neon-glow">
-          &lt;LT /&gt;
+        <a href="#" className="font-display text-xl font-bold tracking-widest text-primary neon-glow">
+          {/* &lt;LOVENISH&gt; */}
         </a>
 
         <div className="hidden md:flex items-center gap-1">
@@ -44,7 +44,7 @@ const Navbar = () => {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 + i * 0.08 }}
-              className="px-4 py-2 text-xs font-display tracking-[0.2em] text-muted-foreground hover:text-primary hover:neon-glow transition-all duration-300"
+              className="px-4 py-2 text-base font-display tracking-[0.2em] text-muted-foreground hover:text-primary hover:neon-glow transition-all duration-300"
             >
               {link.label}
             </motion.a>

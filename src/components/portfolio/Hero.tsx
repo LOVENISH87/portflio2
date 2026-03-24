@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Gamepad2 } from "lucide-react";
+import { ArrowRight, Terminal } from "lucide-react";
 
 const TypeWriter = ({ text, delay = 0 }: { text: string; delay?: number }) => {
   const [displayed, setDisplayed] = useState("");
@@ -48,20 +48,20 @@ const Hero = () => {
           className="max-w-4xl"
         >
           {/* Status badge */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="inline-flex items-center gap-3 px-4 py-2 rounded border border-primary/20 bg-primary/5 mb-10"
           >
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary/75" />
+            {/* <span className="relative flex h-2 w-2"> */}
+              {/* <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary/75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
-            </span>
-            <span className="text-xs font-display tracking-[0.3em] text-primary uppercase">
+            </span> */}
+            {/* <span className="text-xs font-display tracking-[0.3em] text-primary uppercase">
               Status: Online — Open to Opportunities
-            </span>
-          </motion.div>
+            </span> */}
+          {/* </motion.div>  */}
 
           {/* Glitch title */}
           <div className="relative mb-6">
@@ -99,7 +99,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 2.5, duration: 0.6 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-lg mb-12 leading-relaxed font-light"
+            className="text-lg md:text-xl text-muted-foreground max-w-lg mb-12 leading-relaxed font-medium"
           >
             CS student turning caffeine into code. Crafting web experiences that are clean, fast, and occasionally bug-free.
           </motion.p>
@@ -114,7 +114,7 @@ const Hero = () => {
               href="#projects"
               className="group inline-flex items-center gap-2 px-7 py-3.5 font-display text-xs tracking-[0.2em] uppercase rounded border border-primary bg-primary/10 text-primary neon-box hover:bg-primary/20 transition-all duration-300"
             >
-              <Gamepad2 size={16} />
+              <Terminal size={16} />
               View Projects
               <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
             </a>
@@ -126,26 +126,7 @@ const Hero = () => {
             </a>
           </motion.div>
 
-          {/* XP Bar */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 3.5 }}
-            className="mt-16 max-w-sm"
-          >
-            <div className="flex justify-between text-xs font-display tracking-wider text-muted-foreground mb-2">
-              <span>LEVEL: CS STUDENT</span>
-              <span className="text-primary">XP 2300/5000</span>
-            </div>
-            <div className="h-2 rounded-full bg-secondary overflow-hidden">
-              <motion.div
-                initial={{ width: 0 }}
-                animate={{ width: "46%" }}
-                transition={{ delay: 3.8, duration: 1.5, ease: "easeOut" }}
-                className="h-full rounded-full bg-gradient-to-r from-primary to-neon-cyan neon-box"
-              />
-            </div>
-          </motion.div>
+
         </motion.div>
       </div>
     </section>

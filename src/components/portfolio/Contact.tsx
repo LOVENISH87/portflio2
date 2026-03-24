@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
-import { Mail, Github, Linkedin, Send, Swords } from "lucide-react";
+import { Mail, Github, Linkedin, Send, MessageSquare } from "lucide-react";
 
 const socials = [
   { icon: Github, href: "https://github.com/LOVENISH87", label: "GitHub" },
@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <section id="contact" className="section-padding">
       <div className="container max-w-2xl text-center">
-        <SectionHeading tag="contact" title="JOIN PARTY?" />
+        <SectionHeading tag="contact" title="LET'S CONNECT" />
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -20,8 +20,8 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <p className="text-lg text-muted-foreground leading-relaxed mb-10 font-light">
-            Ready to team up? Whether you have a project, a collaboration, or just want to chat about tech
+          <p className="text-lg text-muted-foreground leading-relaxed mb-10 font-medium">
+            Looking to collaborate? Whether you have a project, an opportunity, or just want to chat about tech
             — my inbox is always open. Let's build something epic together.
           </p>
 
@@ -31,7 +31,7 @@ const Contact = () => {
             whileTap={{ scale: 0.97 }}
             className="inline-flex items-center gap-3 px-8 py-4 font-display text-xs tracking-[0.2em] uppercase rounded border border-primary bg-primary/10 text-primary neon-box hover:bg-primary/20 transition-all duration-300"
           >
-            <Swords size={18} />
+            <MessageSquare size={18} />
             Send Message
             <Send size={14} />
           </motion.a>
