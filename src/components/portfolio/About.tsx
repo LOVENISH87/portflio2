@@ -23,17 +23,17 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="space-y-5"
           >
-            <div className="glass-game rounded-lg p-6 border-l-2 border-l-primary">
+            <div className="shimmer-card glass-game rounded-lg p-6 border-l-2 border-l-primary">
               <p className="text-muted-foreground leading-relaxed text-lg font-medium">
                 Hey! I'm <span className="text-primary font-bold">Lovenish</span> — a Computer Science student at Lovely Professional University. What began as a simple curiosity about HTML has grown into a deep passion for web engineering.
               </p>
             </div>
-            <div className="glass-game rounded-lg p-6 border-l-2 border-l-neon-pink">
+            <div className="shimmer-card glass-game rounded-lg p-6 border-l-2 border-l-neon-pink">
               <p className="text-muted-foreground leading-relaxed text-lg font-medium">
                 I've built a strong foundation in <span className="text-neon-pink font-semibold">Computer Networking</span>, <span className="text-neon-pink font-semibold">Data Structures</span>, and <span className="text-neon-pink font-semibold">Full Stack Development</span> — I love the process of turning complex problems into elegant solutions.
               </p>
             </div>
-            <div className="glass-game rounded-lg p-6 border-l-2 border-l-neon-purple">
+            <div className="shimmer-card glass-game rounded-lg p-6 border-l-2 border-l-neon-purple">
               <p className="text-muted-foreground leading-relaxed text-lg font-medium">
                 Outside of coursework, I enjoy learning from the tech community, experimenting with modern JavaScript frameworks, and tracking down elusive bugs in my code.
               </p>
@@ -57,7 +57,7 @@ const About = () => {
                 whileHover={{ scale: 1.05, y: -5 }}
                 className="glass-game rounded-lg p-6 text-center group hover:border-primary/30 transition-all duration-300 cursor-default"
               >
-                <stat.icon className={`mx-auto mb-3 ${stat.color}`} size={24} />
+                <stat.icon className={`mx-auto mb-3 ${stat.color} group-hover:animate-spin-glow`} size={24} />
                 <div className={`text-3xl font-display font-bold ${stat.color} mb-1`}>{stat.value}</div>
                 <div className="text-xs font-display tracking-wider text-muted-foreground uppercase">{stat.label}</div>
               </motion.div>
