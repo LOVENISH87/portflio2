@@ -16,7 +16,7 @@ import SectionHeading from "./SectionHeading";
 const categories = {
   Frontend: [
     "HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Next.js",
-    "Angular", "Tailwind CSS", "Bootstrap", "Sass", "jQuery", "Vite",
+    "Angular", "Tailwind CSS", "Bootstrap", "jQuery", "Vite",
   ],
   Backend: ["Node.js", "Express.js", "Python", "C", "Java", "PHP", "REST APIs"],
   Database: ["MongoDB", "MySQL", "PostgreSQL", "Firebase", "Supabase"],
