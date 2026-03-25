@@ -25,11 +25,10 @@ const Navbar = () => {
       initial={{ y: -80 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
           ? "glass-game border-b border-primary/10 shadow-[0_2px_20px_-5px_hsl(160_100%_50%/0.15)]"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="container flex items-center justify-between h-16">
         <a href="#" className="font-display text-xl font-bold tracking-widest text-primary neon-glow">
@@ -50,7 +49,7 @@ const Navbar = () => {
             </motion.a>
           ))}
           <motion.a
-            href="/lovenishcvnew-12.pdf"
+            href="/lovenishcvnew-2.pdf"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: -10 }}
