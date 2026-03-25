@@ -93,10 +93,9 @@ const Certificates = () => {
       <div className="container">
         <SectionHeading tag="achievements" title="CERTIFICATES" />
 
-        <div className="flex flex-col lg:flex-row gap-8 items-start">
-
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-[1.3fr_1fr] xl:grid-cols-[1.5fr_1fr] gap-8 lg:gap-12 items-start">
           {/* ── LEFT: Featured large cert viewer ── */}
-          <div className="w-full lg:w-3/5 xl:w-2/3">
+          <div className="w-full min-w-0">
             <div className="relative">
               {/* Counter */}
               <div className="flex items-center justify-between mb-4">
@@ -189,7 +188,7 @@ const Certificates = () => {
           </div>
 
           {/* ── RIGHT: Scrollable thumbnail rail ── */}
-          <div className="w-full lg:w-2/5 xl:w-1/3">
+          <div className="w-full min-w-0">
             <p className="text-xs font-display tracking-[0.2em] text-muted-foreground uppercase mb-4">
               All Certificates
             </p>

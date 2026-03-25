@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
-import { Mail, Github, Linkedin, Send, User, MessageSquare, AtSign, CheckCircle2, Loader2 } from "lucide-react";
+import { Mail, Github, Linkedin, Send, User, MessageSquare, AtSign, CheckCircle2, Loader2, Phone } from "lucide-react";
 
 const socials = [
   { icon: Github, href: "https://github.com/LOVENISH87", label: "GitHub" },
@@ -61,8 +61,9 @@ const Contact = () => {
             <div className="space-y-4">
               {[
                 { icon: Mail, label: "Email", value: "lovenish369@gmail.com", href: "mailto:lovenish369@gmail.com" },
-                { icon: Github, label: "GitHub", value: "github.com/LOVENISH8", href: "https://github.com/LOVENISH87" },
+                { icon: Github, label: "GitHub", value: "github.com/LOVENISH87", href: "https://github.com/LOVENISH87" },
                 { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/lovenish", href: "https://linkedin.com/in/lovenish-thakur-225a5b297" },
+                { icon: Phone, label: "Phone", value: "+91 234343434", href: "tel:+91234343434" },
               ].map((item) => (
                 <a
                   key={item.label}
