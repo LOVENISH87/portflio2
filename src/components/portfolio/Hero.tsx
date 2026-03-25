@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, Terminal as TerminalIcon, Maximize2, Minus, X } from "lucide-react";
+import { ArrowRight, Terminal as TerminalIcon, Maximize2, Minus, X, FileDown } from "lucide-react";
 
 // ─── TypeWriter ─────────────────────────────────────────────────────────────
 const TypeWriter = ({ text, delay = 0 }: { text: string; delay?: number }) => {
@@ -324,6 +324,15 @@ const Hero = () => {
                 className="inline-flex items-center gap-2 px-7 py-3.5 font-display text-xs tracking-[0.2em] uppercase rounded border border-neon-pink/40 text-neon-pink neon-box-pink hover:bg-neon-pink/10 transition-all duration-300"
               >
                 Let's Talk
+              </a>
+              <a
+                href="/lovenishcvnew-12.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-7 py-3.5 font-display text-xs tracking-[0.2em] uppercase rounded border border-white/20 text-white/80 hover:bg-white/10 transition-all duration-300 backdrop-blur-sm"
+              >
+                <FileDown size={16} />
+                Resume
               </a>
             </motion.div>
           </motion.div>

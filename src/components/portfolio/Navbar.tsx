@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
-const navLinks = [
+const navLinks: { label: string; href: string; external?: boolean }[] = [
   { label: "ABOUT", href: "#about" },
   { label: "SKILLS", href: "#skills" },
   { label: "EDUCATION", href: "#education" },
@@ -50,6 +50,17 @@ const Navbar = () => {
             </motion.a>
           ))}
           <motion.a
+            href="/lovenishcvnew-12.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 + navLinks.length * 0.08 }}
+            className="px-4 py-2 text-base font-display tracking-[0.2em] text-muted-foreground hover:text-primary hover:neon-glow transition-all duration-300"
+          >
+            RESUME
+          </motion.a>
+          <motion.a
             href="#contact"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -78,10 +89,12 @@ const Navbar = () => {
             className="md:hidden glass-game border-t border-primary/10 overflow-hidden"
           >
             <div className="container py-4 flex flex-col gap-1">
-              {[...navLinks, { label: "CONTACT", href: "#contact" }].map((link) => (
+              {[...navLinks, { label: "RESUME", href: "/lovenishcvnew-12.pdf", external: true }, { label: "CONTACT", href: "#contact" }].map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
+                  target={link.external ? "_blank" : undefined}
+                  rel={link.external ? "noopener noreferrer" : undefined}
                   onClick={() => setMobileOpen(false)}
                   className="px-4 py-3 text-xs font-display tracking-[0.2em] text-muted-foreground hover:text-primary hover:bg-primary/5 rounded transition-all"
                 >
